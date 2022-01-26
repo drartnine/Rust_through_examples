@@ -4,7 +4,7 @@ fn main() {
     println!("Convert Fahrenheit and Celcius");
 
     loop {
-        println!("Please input temperature in Fahrenheit.");
+        println!("Please input temperature in Fahrenheit. Input a letter to terminate the program");
 
         let mut fah = String::new();
 
@@ -22,8 +22,8 @@ fn main() {
 
             let cel = (fah - 32.0)/1.80;
 
-            println!("{} Fahrenheit is {:3} Celcius", fah, cel);
-            break;
+            println!("{} Fahrenheit is {:.2} Celcius", fah, cel);
+
     }
 
 }
